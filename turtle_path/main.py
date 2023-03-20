@@ -26,10 +26,8 @@ home.color("blue")
 home.forward(40)
 home.left(90)
 
-while home.distance(mosque) >= 0:
+while not home.distance(mosque) == 0:
     home.forward(1)
-    if home.distance(mosque) == 0:
-        break
 
 home.right(90)
 home.forward(60)
