@@ -12,10 +12,12 @@ star.hideturtle()
 def draw_square(linecolor, width=200, height=100):
     flag_bg.color(linecolor)
 
+    # To put the flag in the center
     flag_bg.penup()
-    flag_bg.goto(-150, -height)
+    flag_bg.goto(-width / (4 / 3), -height)
     flag_bg.pendown()
 
+    # Draw the rectangle shape
     for i in range(4):
         flag_bg.forward(width)
         if i % 2 == 0:
