@@ -26,14 +26,17 @@ home.color("blue")
 home.forward(40)
 home.left(90)
 
+# Looking for the mosque
 while not home.distance(mosque) == 0:
     home.forward(1)
 
+# Going to the cinema
 home.right(90)
 home.forward(60)
 home.left(90)
 home.forward(50)
 
+# Showing Results
 message.penup()
 message.goto(0, 200)
 message.pendown()
